@@ -13,7 +13,10 @@ class upload extends Model
 
     protected $fillable = [
         'name',
-        'size'
+        'size',
+        'path'
     ];
     protected $guarded = 'id';
+    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+    
 }

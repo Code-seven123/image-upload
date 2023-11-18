@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [upController::class, 'index']);
 Route::post('index/proses', [upController::class, 'store']);
+Route::get('image/{file}', [upController::class, 'show']);
+Route::get('item/delete/{id}', [upController::class, 'destroy']);
